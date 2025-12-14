@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+
+header {
+    background: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    font-size: 16px;
+}
+
+nav a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+#home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: slideUp 1s ease forwards;
+    padding: 0 20px;
+}
+
+.container h1 {
+    font-size: 100px;
+    margin: 0;
+}
+
+.home-content h1 {
+    font-size: 70px;
+}
+
+.container h1 span {
+    color: darkred;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.container h3 {
+    font-size: 50px;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeSlide 1s ease forwards;
+    animation-delay: 0.4s;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (max-width: 900px) {
+    .home-content h1 {
+        font-size: 50px;
+    }
+
+    .container h3 {
+        font-size: 28px;
+    }
+
+    nav {
+        gap: 25px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    #home {
+        padding-top: 40px;
+    }
+
+    nav {
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .home-content h1 {
+        font-size: 34px;
+    }
+
+    .container h3 {
+        font-size: 20px;
+    }
+
+    .container h1 {
+        font-size: 42px;
+    }
+}
