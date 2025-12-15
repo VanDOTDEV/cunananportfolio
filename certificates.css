@@ -2,15 +2,16 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #ffffff;
-    color: #000000;
+    background: #000000;
+    color: #ffffff;
     overflow-x: hidden;
 }
 
-/* HEADER */
+
 header {
     background: #000000;
     color: #ffffff;
+    border: 1px solid white;
     padding: 20px 0;
     position: fixed;
     top: 0;
@@ -48,7 +49,7 @@ nav a:hover::after {
     width: 100%;
 }
 
-/* SECTION */
+
 #certificates {
     padding: 130px 40px;
     animation: slideUp 0.8s ease forwards;
@@ -71,10 +72,9 @@ p {
     line-height: 1.6;
 }
 
-/* CERTIFICATE CARD */
 .card {
-    background: #ffffff;
-    border: 1px solid #000;
+    background: #000000;
+    border: 1px solid #ffffff;
     border-radius: 6px;
     padding: 25px;
     margin-top: 20px;

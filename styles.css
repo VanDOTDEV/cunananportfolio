@@ -1,17 +1,17 @@
-/* GLOBAL RESET */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: #ffffff;
-    color: #000000;
+    background: #000000;
+    color: #ffffff;
     overflow-x: hidden;
 }
 
-/* HEADER */
+
 header {
     background: #000000;
     color: #ffffff;
+    border-bottom: 1px solid white;
     padding: 20px 0;
     position: fixed;
     width: 100%;

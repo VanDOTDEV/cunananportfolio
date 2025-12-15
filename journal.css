@@ -2,14 +2,15 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #ffffff;
-    color: #000000;
+    background: #000000;
+    color: #ffffff;
 }
 
 
 header {
     background: #000000;
     color: #ffffff;
+    border-bottom: 1px solid white;
     padding: 20px;
     position: fixed;
     width: 100%;
@@ -58,12 +59,12 @@ section {
 }
 
 .card {
-    border: 2px solid #000;
+    border: 2px solid #ffffff;
     padding: 30px; 
     border-radius: 4px;
     margin-bottom: 25px;
     transition: 0.3s ease;
-    background: #fff;
+    background: #97979723;
 }
 
 .card:hover {
